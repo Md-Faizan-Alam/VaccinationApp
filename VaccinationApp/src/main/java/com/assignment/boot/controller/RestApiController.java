@@ -24,45 +24,6 @@ public class RestApiController {
 	@Autowired
 	CenterService centerService;
 	
-	@GetMapping("/")
-	public ModelAndView homepage() {
-		return new ModelAndView("home");
-	}
-	
-	@GetMapping("/allCenters")
-	public ModelAndView allCenters() {
-		ModelAndView mav = new ModelAndView("allCenters");
-		List<Center> centerList = centerService.getAll();
-		mav.addObject("centerList",centerList);
-		return mav;
-	}
-	
-	@GetMapping("/findByDistrict")
-	public ModelAndView findByDistrict() {
-		return new ModelAndView("distSearch");
-	}
-	@PostMapping("/distList")
-	public ModelAndView districtList(HttpServletRequest request) {
-		ModelAndView mav = new ModelAndView("allCenters");
-		String district = request.getParameter("district");
-		List<Center> centerList = centerService.getByDistrict(district);
-		mav.addObject("centerList",centerList);
-		return mav;
-	}
-	
-	@GetMapping("/findByPincode")
-	public ModelAndView findByPincode() {
-		return new ModelAndView("pinSearch");
-	}
-	@PostMapping("/pinList")
-	public ModelAndView pincodeList(HttpServletRequest request) {
-		ModelAndView mav = new ModelAndView("allCenters");
-		int pincode = Integer.parseInt(request.getParameter("pincode"));
-		List<Center> centerList = centerService.getByPincode(pincode);
-		mav.addObject("centerList",centerList);
-		return mav;
-	}
-	
 	@PostMapping("/baseurl/api/v1/setList")
 	public void addCenters(@RequestBody List<Center> centerList) {
 		centerService.addCenterList(centerList);
