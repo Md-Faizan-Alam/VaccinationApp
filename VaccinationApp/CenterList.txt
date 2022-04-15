@@ -1,0 +1,51 @@
+[
+    {
+        "name":"Kolkata Police Hospital",
+        "address":"2, Beninandan Street, Kolkata",
+        "pincode":700025,
+        "district":"Bhowanipur",
+        "state":"West Bengal"
+    },
+    {
+        "name":"Command Hospital",
+        "address":"17/1E, Alipur Rd, Alipore Police Line, Kolkata",
+        "pincode":700027,
+        "district":"Alipore",
+        "state":"West Bengal"
+    },
+    {
+        "name":"Kothari Medical Centre",
+        "address":"8/3, Alipur Rd, Kolkata",
+        "pincode":700027,
+        "district":"Alipore",
+        "state":"West Bengal"
+    },
+    {
+        "name":"Shirodhkar Hospital",
+        "address":"Paranjape Scheme B Road No. 1, Vishnu Prasad Society, Navpada, Vile Parle East, Mumbai",
+        "pincode":400057,
+        "district":"Vile Parle",
+        "state":"Maharashtra"
+    },
+    {
+        "name":"Praxis Healthcare",
+        "address":"Pace house, 7, Gulmohar Rd, Mumbai",
+        "pincode":400056,
+        "district":"Swastik Society",
+        "state":"Maharashtra"
+    },
+    {
+        "name":"Apollo Hospital",
+        "address":"Rd Number 72, opposite Bharatiya Vidya Bhavan School, Hyderabad",
+        "pincode":500033,
+        "district":"Film Nagar",
+        "state":"Telangana"
+    },
+    {
+        "name":"Avis Hospital",
+        "address":"plot no 99, Road No. 1, next to chiranjeevi blood bank, Hyderabad",
+        "pincode":500033,
+        "district":"Jubilee Hills",
+        "state":"Telangana"
+    }
+]
